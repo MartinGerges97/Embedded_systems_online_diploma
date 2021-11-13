@@ -1,0 +1,30 @@
+lab1
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char choice;
+    float rad,area,circumf;
+    printf("please enter the radius:\t");
+    fflush(stdin);fflush(stdout);
+    scanf("%f",&rad);
+    printf("for area please enter a and for circumference please enter c \t");
+    fflush(stdin);fflush(stdout);
+    scanf("%c",&choice);
+    if (choice == 'a')
+    {
+        area = 3.14*rad*rad;
+        printf("the area of circle equal \t %f",area);
+    }
+    else if (choice == 'c')
+    {
+        circumf = 2*3.14*rad;
+        printf("the circumference of circle equal \t %f",circumf);
+    }
+    else
+    {
+        printf("wrong choice");
+    }
+    return 0;
+}
