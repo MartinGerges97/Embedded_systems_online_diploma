@@ -1,0 +1,19 @@
+lab5
+
+#include <stdio.h> 
+#include <stdio.h>
+{
+    int num,i,sum=0,degree;
+    float avg;
+    printf("please enter number of students: \n");
+    scanf("%d",&num);
+    for(i=1,sum=0;i<=num;i++)
+    {
+        printf("enter student (%d) degree: ",i);
+        scanf("%d",&degree);
+        sum+=degree;
+    }
+    avg = sum/num;
+    printf("the average equal: %f", avg);
+    return 0;
+}
