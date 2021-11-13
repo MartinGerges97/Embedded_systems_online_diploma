@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    printf(enter two numbers :);
+    fflush(stdin);fflush(stdout);
+    scanf(%d %d,&a,&b);
+    printf(the minimum number is %d rn , (a<b)? a:b);
+    return 0;
+}
+
